@@ -24,6 +24,7 @@
 
         <thread>100</thread>
         <loop>200</loop>
+	<rumpup>60</rumpup>
 
         <jmeter.maven.plugin.version>2.9.0</jmeter.maven.plugin.version>
         <jmeter.version>5.1.1</jmeter.version>
@@ -120,6 +121,7 @@
 
                         <thread>${thread}</thread>
                         <loop>${loop}</loop>
+			<rumpup>${rumpup}</rumpup>
                     </propertiesUser>
 
                     <propertiesJMeter>
