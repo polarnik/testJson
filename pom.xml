@@ -129,6 +129,7 @@
                         <!-- # Disable sent statistics to https://jmeter-plugins.org/stats/ -->
                         <jpgc.repo.sendstats>false</jpgc.repo.sendstats>
                         <sampleresult.default.encoding>UTF-8</sampleresult.default.encoding>
+			<httpclient.reset_state_on_thread_group_iteration>false</httpclient.reset_state_on_thread_group_iteration>
                     </propertiesJMeter>
 
                     <testResultsTimestamp>false</testResultsTimestamp>
@@ -157,8 +158,8 @@
                     https://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html
                     -->
                     <jMeterProcessJVMSettings>
-                        <xms>32</xms>
-                        <xmx>512</xmx>
+                        <xms>512</xms>
+                        <xmx>4000</xmx>
                         <arguments>
                             <argument>-XX:MaxMetaspaceSize=256m</argument>
 
