@@ -12,10 +12,10 @@
     <properties>
         <!-- Test name -->
         <jmx>testJson</jmx>
-        <influxdb.host>influxdbhost</influxdb.host>
+        <influxdb.host>localhost</influxdb.host>
         <influxdb.port>8086</influxdb.port>
-        <influxdb.database>jmeterInflux</influxdb.database>
-        <influxdb.username>none</influxdb.username>
+        <influxdb.database>jmeter</influxdb.database>
+        <influxdb.username>jmeterUser</influxdb.username>
         <influxdb.password>none</influxdb.password>
 
         <host></host>
@@ -197,26 +197,6 @@
                                     <host>127.0.0.1</host>
                                     <port>8888</port>
                                 </proxyConfig>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <!-- SOCKS proxy configuration -->
-        <profile>
-            <id>socks</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.lazerycode.jmeter</groupId>
-                        <artifactId>jmeter-maven-plugin</artifactId>
-                        <configuration>
-                            <jMeterProcessJVMSettings>
-                                <arguments>
-                                    <argument>-DsocksProxyHost=127.0.0.1</argument>
-                                    <argument>-DsocksProxyPort=8888</argument>
-                                </arguments>
-                            </jMeterProcessJVMSettings>
                         </configuration>
                     </plugin>
                 </plugins>
