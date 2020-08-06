@@ -25,17 +25,17 @@
           </elementProp>
           <elementProp name="thread" elementType="Argument">
             <stringProp name="Argument.name">thread</stringProp>
-            <stringProp name="Argument.value">${__P(thread),1}</stringProp>
+            <stringProp name="Argument.value">${__P(thread)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="loop" elementType="Argument">
             <stringProp name="Argument.name">loop</stringProp>
-            <stringProp name="Argument.value">${__P(loop),1}</stringProp>
+            <stringProp name="Argument.value">${__P(loop)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="rumpup" elementType="Argument">
             <stringProp name="Argument.name">rumpup</stringProp>
-            <stringProp name="Argument.value">${__P(rumpup),1}</stringProp>
+            <stringProp name="Argument.value">${__P(rumpup)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
