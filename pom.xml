@@ -114,7 +114,8 @@
                         <influxdb.host>${influxdb.host}</influxdb.host>
                         <influxdb.port>${influxdb.port}</influxdb.port>
                         <influxdb.database>${influxdb.database}</influxdb.database>
-
+			<influxdb.username>${influxdb.username}</influxdb.username>
+			<influxdb.password>${influxdb.password}</influxdb.password>
                         <host>${host}</host>
                         <device_id>${device_id}</device_id>
                         <header>${header}</header>
