@@ -133,7 +133,7 @@
                         <jpgc.repo.sendstats>false</jpgc.repo.sendstats>
                         <sampleresult.default.encoding>UTF-8</sampleresult.default.encoding>
 			<httpclient.reset_state_on_thread_group_iteration>false</httpclient.reset_state_on_thread_group_iteration>
-			<httpsampler.max_bytes_to_store_per_request>1</httpsampler.max_bytes_to_store_per_request>
+			<httpsampler.max_bytes_to_store_per_request>400000</httpsampler.max_bytes_to_store_per_request>
                     </propertiesJMeter>
 
                     <testResultsTimestamp>false</testResultsTimestamp>
