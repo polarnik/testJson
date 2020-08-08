@@ -53,6 +53,11 @@
             <stringProp name="Argument.value">${__P(influxdb.password)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="influxdb.host" elementType="Argument">
+            <stringProp name="Argument.name">influxdb.host</stringProp>
+            <stringProp name="Argument.value">${__P(influxdb.host)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </elementProp>
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
@@ -645,7 +650,7 @@ vars.putObject(&quot;target&quot;, target);</stringProp>
               </UserParameters>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/files/userdate/{account_id}/{project_id}/{id}/target.jpg (GET)" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/files/userdate/{account_id}/{project_id}/{id}/target.jpg (GET)" enabled="false">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="${__Random(10000000000,20000000000,)}" elementType="HTTPArgument">
@@ -713,7 +718,7 @@ vars.putObject(&quot;target&quot;, target);</stringProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -760,7 +765,7 @@ vars.putObject(&quot;target&quot;, target);</stringProp>
             </elementProp>
             <elementProp name="influxdbUrl" elementType="Argument">
               <stringProp name="Argument.name">influxdbUrl</stringProp>
-              <stringProp name="Argument.value">http://localhost:8086/write?db=${influxdb.database}&amp;u=${influxdb.username}&amp;p=${influxdb.password}</stringProp>
+              <stringProp name="Argument.value">http://${influxdb.host}:8086/write?db=${influxdb.database}&amp;u=${influxdb.username}&amp;p=${influxdb.password}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="application" elementType="Argument">
