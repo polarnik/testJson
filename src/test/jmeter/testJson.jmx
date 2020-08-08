@@ -48,7 +48,7 @@
         <boolProp name="CookieManager.clearEachIteration">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="false">
         <boolProp name="clearEachIteration">false</boolProp>
         <boolProp name="useExpires">true</boolProp>
       </CacheManager>
@@ -191,28 +191,28 @@ SampleResult.setIgnore()</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">_NONE_</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor: video data.id (array)" enabled="true">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor: video data.id (array)" enabled="false">
             <stringProp name="JSONPostProcessor.referenceNames">video_data_id</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.[*][?(@.type==&quot;video&quot;)].id</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">_NONE_</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor: video data.account_id (array)" enabled="true">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor: video data.account_id (array)" enabled="false">
             <stringProp name="JSONPostProcessor.referenceNames">video_data_account_id</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.[*][?(@.type==&quot;video&quot;)].account_id</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">_NONE_</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor: video data.project_id (array)" enabled="true">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor: video data.project_id (array)" enabled="false">
             <stringProp name="JSONPostProcessor.referenceNames">video_data_project_id</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.[*][?(@.type==&quot;video&quot;)].project_id</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
             <stringProp name="JSONPostProcessor.defaultValues">_NONE_</stringProp>
           </JSONPostProcessor>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor: video data.code (array)" enabled="true">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor: video data.code (array)" enabled="false">
             <stringProp name="JSONPostProcessor.referenceNames">video_data_code</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.[*][?(@.type==&quot;video&quot;)].code</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
@@ -312,7 +312,7 @@ vars.putObject(&quot;target&quot;, target);</stringProp>
             <stringProp name="scriptLanguage">groovy</stringProp>
           </JSR223PostProcessor>
           <hashTree/>
-          <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor" enabled="true">
+          <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor" enabled="false">
             <boolProp name="displayJMeterProperties">false</boolProp>
             <boolProp name="displayJMeterVariables">true</boolProp>
             <boolProp name="displaySamplerProperties">true</boolProp>
@@ -661,7 +661,7 @@ vars.putObject(&quot;target&quot;, target);</stringProp>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -698,7 +698,7 @@ vars.putObject(&quot;target&quot;, target);</stringProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
